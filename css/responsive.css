@@ -1,0 +1,358 @@
+@media screen and (max-width: 1023px) {
+
+  /* ---------Nav-Bar------------- */
+
+  [aria-controls="navbarDropdown"] {
+    display: block;
+  }
+
+  [aria-expanded="false"] ~ ul {
+    display: none;
+  }
+
+  [aria-expanded="true"] ~ ul {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 100px;
+    background: var(--white);
+    width: 100%;
+    text-align: right;
+    box-shadow: 0px 10px 10px rgba(52, 49, 75, 0.2);
+    padding: 1.25rem;
+  }
+
+  [aria-expanded="true"] ~ ul li a {
+    margin-right: 1.25rem;
+    color: #666;
+  }
+
+  [aria-expanded="false"] .close {
+    display: none;
+  }
+
+  [aria-expanded="true"] .close {
+    display: inline-block;
+  }
+
+  [aria-expanded="true"] .open {
+    display: none;
+  }
+
+  .main-nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+    margin-top: 1.5625rem;  
+  }
+
+  .link-btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5625rem;  
+  }
+
+  .nav-link .nav-btn {
+    margin-left: 0;
+  }
+
+  /* -------------Header------------ */
+
+  .hero-wrapper {
+    padding: 7.5rem 0;
+    flex-direction: column;
+    gap: 120px;
+  }
+
+  .header-left {
+    text-align: center;
+  }
+
+  /* -----------Key Benefits------------ */
+
+  .key-benefits {
+    padding-top: 15.625rem;
+  }
+
+  .benefit-card {
+    max-width: 344px;
+  }
+
+  .benefit-card a:nth-child(1) {
+    width: 345px;
+    height: 254px;
+  }
+
+  /* ------------Banner-1---------------- */
+
+  .banner-1 {
+    flex-wrap: wrap;
+    justify-content: center;  
+  }
+
+  .banner-1 img {
+    margin-top: 2.5rem;
+    max-width: 750px;  
+  }
+
+  .banner-text {
+    text-align: center;
+  }
+
+  /* ---------------Hub-Spot------------------ */
+
+  .hub-spot {
+    flex-wrap: wrap;
+    justify-content: center;  
+  }
+
+  .hub-right {
+    text-align: center;
+    margin-top: 3.75rem;
+  }
+
+  /* -------------Worlds Best------------------- */
+
+  .worlds-best h3 {
+    margin-top: 4.375rem;
+  }
+
+  /* -------------Pricing--------------- */
+
+  .pricing-table {
+    flex-wrap: wrap;
+    justify-content: center;  
+  }
+
+  .pricing-table .month-price {
+    width: auto;
+    text-align: center;  
+  }
+
+  /* --------------------Hire Us------------------- */
+
+  .hire-us {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hire-us-left {
+    display: flex;
+    align-items: center;
+    margin-top: 1.875rem;
+    width: 700px;
+    margin-left: 0;
+  }
+
+  .hire-us-1 {
+    max-width: 400px;
+  }
+
+  .hire-us-1 p {
+    display: block ruby;
+  }
+
+  .hire-us-left hr {
+    width: 100%;
+  }
+
+  .hire-us-quote {
+    margin-bottom: 0;
+  }
+
+  .hire-us-2 {
+    margin-left: auto;
+    margin-right: 1.25rem;  
+  }
+
+  .hire-us-people {
+    margin-top: 1.875rem;  
+  }
+
+  .hire-us .hire-us-form {
+    max-width: none;
+    margin-right: auto;
+    margin-top: -3.75rem;
+  }
+
+  .hire-us-form .form-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .market-emails p {
+    text-align: initial;
+    margin-left: 0.75rem;  
+  }
+}
+
+
+
+@media screen and (max-width: 767px) {
+
+  /* -------------Navbar------------------ */
+
+  .main-nav {
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* ---------------Header-------------------- */
+  
+  .header-right {
+    width: 320px;
+  }
+
+  .google-logo {
+    left: 0px;
+    bottom: 10px;
+  }
+
+  .atlassian-logo { left: 100px; }
+  .asana-logo { left: 230px; }
+
+  .paypal-logo {
+    left: 0px;
+    bottom: 130px;
+  }
+
+  .weave-logo {
+    left: 180px;
+    bottom: 205px;
+  }
+
+  .google-a-logo {
+    left: 100px;
+    bottom: 175px;
+  }
+
+  .calender-logo {
+    left: 220px;
+    bottom: 180px;
+  }
+
+  /* --------------Banner-1---------------------- */
+  
+  .banner-1 .banner-text {
+    margin-left: 0;
+  }
+
+  .banner-1 .banner-text h2 {
+    font-size: 1.375rem;
+    font-weight: 600;
+  }
+
+  /* -----------------Dots--------------------- */
+
+  .dot-container {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    margin-top: 3.125rem;  
+  }
+
+  .dot-container .dots {
+    flex-direction: column;
+    margin-top: 0;
+    gap: 30px;
+  }
+
+  .dot-container .dots .line {
+    display: none;
+  }
+
+  .dot-container .dot-titles {
+    flex-direction: column;
+  }
+
+  .dot-container .dot-titles .even-out {
+    margin-left: 0;
+  }
+
+  /* -----------------------Banner-2------------------ */
+
+  .banner-2 {
+    margin-left: -1.25rem;
+  }
+
+  .banner-2 img {
+    width: 115%;
+    max-width: 115%;
+  }
+
+  .banner-2 a {
+    left: 46%;
+    top: 31%;
+  }
+
+  /* ---------------------HubSpot----------------- */
+
+  .hub-left .border-dots {
+    left: 10px;
+    top: 60px;
+  }
+
+  .hub-left .border-dots img {
+    height: 255px;
+  }
+
+  .hub-left .woman-three {
+    width: 246px;
+    margin-left: 2.8125rem;
+  }
+
+  /* ----------------Worlds Best---------------- */
+
+  .worlds-best .company-logos {
+    gap: 40px;
+    margin-top: 5.375rem;
+    flex-direction: column;
+    max-width: 160px;
+    margin-left: auto;
+    margin-right: auto;  
+  }
+
+  /* ---------------------Hire-Us----------------- */
+
+  .hire-us .hire-us-left {
+    display: block;
+    text-align: center;
+  }
+
+  .hire-us .hire-us-left .hire-us-1 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hire-us-left .hire-us-2 {
+    margin-right: auto;
+    margin-top: 4.375rem;
+  }
+
+  .hire-us-2 .hire-us-people {
+    justify-content: center;
+  }
+
+  /* --------------Footer------------------ */
+
+  .footer-top {
+    text-align: center;
+    grid-template-columns: none;
+  }
+
+  .footer-top .contact-info {
+    width: inherit;
+    margin-bottom: 1.875rem;
+  }
+
+  .footer-bottom .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;  
+  }
+
+  .footer-links .socials {
+    margin-left: 0;
+  }
+}
